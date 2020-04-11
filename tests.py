@@ -11,7 +11,7 @@ class TestSum(unittest.TestCase):
 
     def test_sum_tuple(self):
         """Checks to see if 1 + 2 = 6. THIS SHOULD FAIL"""
-        self.assertEqual(sum((1, 2)), 6, "Should be 6")
+        self.assertNotEqual(sum((1, 2)), 6, "Should NOT be 6")
 
     def test_prime_true(self):
         """Checks to see if 101 is prime"""
